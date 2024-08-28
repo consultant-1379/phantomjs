@@ -1,0 +1,27 @@
+<assembly>
+    <id>nodejs</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+	    <directory>phantomjs-1.6.1-linux-x86_64-dynamic/bin</directory>
+            <outputDirectory>/bin</outputDirectory>
+            <useDefaultExcludes>false</useDefaultExcludes>
+        </fileSet>
+        <fileSet>
+            <directory>phantomjs-1.6.1-linux-x86_64-dynamic/lib</directory>
+            <outputDirectory>/lib</outputDirectory>
+            <useDefaultExcludes>false</useDefaultExcludes>
+        </fileSet>
+	<fileSet>
+            <directory>phantomjs-1.6.1</directory>
+            <outputDirectory>/bin</outputDirectory>
+	    <includes>
+	      <include>phantomjs.exe</include>
+	    </includes>
+            <useDefaultExcludes>false</useDefaultExcludes>
+        </fileSet>
+    </fileSets>
+</assembly>
